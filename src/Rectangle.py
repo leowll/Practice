@@ -62,7 +62,7 @@ def is_overlapped(xa1, ya1, xa2, ya2, xb1, yb1, xb2, yb2):
     x_mid_dist = abs(x_mid1 - x_mid2)
     y_mid_dist = abs(y_mid1 - y_Mid2)
 
-    if x_mid_dist < (x_dist1 + x_dist2) or y_mid_dist < (y_dist1 + y_dist2):
+    if x_mid_dist < (x_dist1 + x_dist2) and y_mid_dist < (y_dist1 + y_dist2):
         return True
     return False
 
