@@ -32,7 +32,7 @@ def calc(xa1, ya1, xa2, ya2, xb1, yb1, xb2, yb2):
         o_xb = min(xa2, xb2)
         o_yb = max(ya2, yb2)
         overlapped_area = abs(o_xa - o_xb) * abs(o_ya - o_yb)
-    return abs(xa1 - xa2) * abs(ya1 - ya2) - overlapped_area * 2
+    return abs(xa1 - xa2) * abs(ya1 - ya2) - overlapped_area
 
 
 def is_overlapped(xa1, ya1, xa2, ya2, xb1, yb1, xb2, yb2):
